@@ -28,6 +28,7 @@ public class StudentController {
 
 	@GetMapping("/getAll")
 	public List<Student> getAllStudents() {
+		logger.info("all students", list);
 		return list;
 	}
 }
