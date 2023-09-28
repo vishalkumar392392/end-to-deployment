@@ -5,10 +5,10 @@ FROM openjdk:17
 WORKDIR /app
 
 # Copy the Spring Boot application JAR file into the container
-COPY target/end-to-end-0.0.1-SNAPSHOT.jar /app/end-to-end-0.0.1-SNAPSHOT.jar
+COPY target/devops-integration.jar /app/devops-integration.jar
 
 # Expose the port your Spring Boot application will listen on
 EXPOSE 80
 
 # Define the command to run your Spring Boot application
-CMD ["java", "-jar", "demo.jar"]
+CMD ["java", "-jar", "devops-integration.jar"]
